@@ -23,6 +23,12 @@ pipeline
             echo "deploying the application"
             }
         } 
+	
+	stage("deploy to test env"){
+        steps{
+            echo "deploying the application to test env"
+            }
+        } 
    
     
   }
