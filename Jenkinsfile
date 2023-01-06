@@ -7,6 +7,9 @@ pipeline
              
 
     stage("build"){
+	when {
+		tag "2.0"
+             }
         steps{
             echo "building the application"
             }
